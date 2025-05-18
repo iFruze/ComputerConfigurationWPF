@@ -1,0 +1,80 @@
+﻿<Window x:Class="ComputerConfig.UserPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerConfig"
+        mc:Ignorable="d"
+        Title="UserPanel" Height="450" Width="800" FontFamily="Arial">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Наличие:"></Label>
+        <Label Grid.Row="0" Grid.Column="2" Content="Тип кмпонента:"></Label>
+        <Label Grid.Row="0" Grid.Column="4" Content="Цена:"></Label>
+        <ComboBox SelectionChanged="AvailBox_Changed" Name="AvailBox" Grid.Row="1" Grid.Column="0">
+            <ComboBoxItem Content="В наличии"></ComboBoxItem>
+            <ComboBoxItem Content="Не в наличии"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox SelectionChanged="CatBox_Changed" Name="CatBox" Grid.Row="1" Grid.Column="2"></ComboBox>
+        <ComboBox SelectionChanged="CostBox_Changed" Name="CostBox" Grid.Row="1" Grid.Column="4">
+            <ComboBoxItem Content="По возрастанию"></ComboBoxItem>
+            <ComboBoxItem Content="По убыванию"></ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="1" Grid.Column="6" Click="ClearFilters" Content="Очистить фильтры"></Button>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="Моя конфигурация" Click="ConfigInfo_Click"></Button>
+        <ListView Name="CompView" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="8">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel></WrapPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10">
+                        <StackPanel Width="200" Height="280">
+                            <Image Source="{Binding imgSource}" Stretch="UniformToFill" Width="150" Height="150"></Image>
+                            <TextBlock>
+<Bold>Название:</Bold> <Run Text="{Binding name}"/>
+                            </TextBlock>
+
+                            <TextBlock>
+<Bold>Категория:</Bold> <Run Text="{Binding cat}"/>
+                            </TextBlock>
+
+                            <TextBlock>
+<Bold>Тип:</Bold> <Run Text="{Binding type}"/>
+                            </TextBlock>
+
+                            <TextBlock>
+                                    <Bold>Цена:</Bold> <Run Text="{Binding cost}"/>
+                            </TextBlock>
+                            <TextBlock>
+                                    <Bold>Наличие:</Bold> <Run Text="{Binding availability}"/>
+                            </TextBlock>
+                            <Button Content="Добавить в конфигурацию" Click="AddToConfig_Click"></Button>
+                            <Button Content="Полная информация" Click="CompInfo_Click"></Button>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

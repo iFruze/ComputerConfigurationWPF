@@ -1,0 +1,53 @@
+﻿<Window x:Class="ComputerConfig.FullInformationAboutComponent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerConfig"
+        mc:Ignorable="d"
+        Title="FullInformationAboutComponent" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <!--<RowDefinition Height="250"></RowDefinition>-->
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Grid.Row="1" Grid.RowSpan="10" Name="ComponentImage"></Image>
+        <Label Grid.Column="2" Grid.ColumnSpan="5" Content="Информация о компоненте:" FontSize="20" FontWeight="Bold"></Label>
+        <Label Grid.Row="1" Grid.Column="2" Content="Название:"></Label>
+        <TextBox IsEnabled="False" Name="NameBox" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+        <Label Grid.Row="3" Grid.Column="2" Content="Описание:"></Label>
+        <TextBox IsEnabled="False" Name="DescBox" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="2" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+        <Label Grid.Row="6" Grid.Column="2" Content="Цена:"></Label>
+        <TextBox IsEnabled="False" Name="CostText" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+        <Label Grid.Row="8" Grid.Column="2" Content="Наличие:"></Label>
+        <TextBox IsEnabled="False" Name="AvailBox" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+        <Label Grid.Row="10" Grid.Column="2" Content="Тип компьютера:"></Label>
+        <TextBox IsEnabled="False" Name="TypeComponentBox" Grid.Row="10" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+        <Label Grid.Row="12" Grid.Column="2" Content="Тип компонента:"></Label>
+        <TextBox IsEnabled="False" Name="CatComponentBox" Grid.Row="12" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+    </Grid>
+</Window>

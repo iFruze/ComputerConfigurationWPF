@@ -1,0 +1,80 @@
+﻿<Window x:Class="ComputerConfig.ConfigurationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerConfig"
+        mc:Ignorable="d"
+        Title="ConfigurationWindow" Height="500" Width="800" Closing="Window_Closing" FontFamily="Arial" FontSize="18">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="70"></ColumnDefinition>
+            <ColumnDefinition Width="60"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Ваша конфигурация:" FontWeight="Bold" FontSize="25" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="2" Grid.Column="0" Content="Процессор:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <Label Grid.Row="3" Grid.Column="0" Content="Материнская плата:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <Label Grid.Row="4" Grid.Column="0" Content="Видеокарта:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <Label Grid.Row="5" Grid.Column="0" Content="Накопитель:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <Label Grid.Row="6" Grid.Column="0" Content="Блок питания:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <Label Grid.Row="7" Grid.Column="0" Content="Охлаждение:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <Label Grid.Row="8" Grid.Column="0" Content="Корпус:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <Label Grid.Row="9" Grid.Column="0" Content="Сетевой адаптер:" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <TextBox Name="ProcBox" Grid.Row="2" Grid.Column="2" Height="30" VerticalContentAlignment="Center" IsEnabled="False"></TextBox>
+        <TextBox Name="MatBox" Grid.Row="3" Grid.Column="2" Height="30" VerticalContentAlignment="Center" IsEnabled="False"></TextBox>
+        <TextBox Name="VideoBox" Grid.Row="4" Grid.Column="2" Height="30" VerticalContentAlignment="Center" IsEnabled="False"></TextBox>
+        <TextBox Name="NakopBox" Grid.Row="5" Grid.Column="2" Height="30" VerticalContentAlignment="Center" IsEnabled="False"></TextBox>
+        <TextBox Name="BlockBox" Grid.Row="6" Grid.Column="2" Height="30" VerticalContentAlignment="Center" IsEnabled="False"></TextBox>
+        <TextBox Name="ColdBox" Grid.Row="7" Grid.Column="2" Height="30" VerticalContentAlignment="Center" IsEnabled="False"></TextBox>
+        <TextBox Name="KorpBox" Grid.Row="8" Grid.Column="2" Height="30" VerticalContentAlignment="Center" IsEnabled="False"></TextBox>
+        <TextBox Name="AdapterBox" Grid.Row="9" Grid.Column="2" Height="30" VerticalContentAlignment="Center"></TextBox>
+        <Label Grid.Row="2" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="3" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="4" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="5" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="6" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="7" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="8" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="9" Grid.Column="4" Content="Цена:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="11" Grid.Column="4" Content="Всего:" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <TextBox Grid.Row="2" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="ProcCost"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="MatCost"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="VideoCost"></TextBox>
+        <TextBox Grid.Row="5" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="NakopCost"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="BlockCost"></TextBox>
+        <TextBox Grid.Row="7" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="ColdCost"></TextBox>
+        <TextBox Grid.Row="8" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="KorpCost"></TextBox>
+        <TextBox Grid.Row="9" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="AdapterCost"></TextBox>
+        <TextBox Grid.Row="11" Grid.Column="5" Height="30" IsEnabled="False" VerticalAlignment="Center" Name="AllCost"></TextBox>
+        <Button Grid.Row="2" Grid.Column="7" Content="Удалить" Click="ProcDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Grid.Row="3" Grid.Column="7" Content="Удалить" Click="MatDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Grid.Row="4" Grid.Column="7" Content="Удалить" Click="VideoDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Grid.Row="5" Grid.Column="7" Content="Удалить" Click="NakopDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Grid.Row="6" Grid.Column="7" Content="Удалить" Click="BlockDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Grid.Row="7" Grid.Column="7" Content="Удалить" Click="ColdDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Grid.Row="8" Grid.Column="7" Content="Удалить" Click="KorpDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Grid.Row="9" Grid.Column="7" Content="Удалить" Click="AdapterDel" Height="30" VerticalAlignment="Center"></Button>
+        <Button Content="Распечатать" Grid.Row="11" Grid.Column="2" Height="30" VerticalAlignment="Center" Click="RaspClick"></Button>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="ComputerConfig.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerConfig"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400" FontFamily="Arial">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Content="Конфигуратор" FontSize="25" FontWeight="Bold" Click="Enter_Click"/>
+        <Label Content="Выберите тип компьютера:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></Label>
+        <Button Grid.Row="4" Width="250" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Подобрать конфигурацию" Click="Button_Click"/>
+        <ComboBox Name="ConfigBox" Width="250" Height="35" Grid.Row="3"></ComboBox>
+    </Grid>
+</Window>
