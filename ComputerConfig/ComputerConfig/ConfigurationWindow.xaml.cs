@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Linq;
-using Microsoft.Office.Interop.Word;
 using Microsoft.Win32;
+using System.IO;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
+using PdfSharp.Drawing.Layout;
+using PdfSharp.Fonts;
 
 namespace ComputerConfig
 {
@@ -148,41 +151,48 @@ namespace ComputerConfig
 
             }
             list.Add($"Общая стоимость - {sum:f2}");
+            if(list.Count == 0)
+            {
+                MessageBox.Show("Лист пустой");
+            }
             var saveDialog = new SaveFileDialog
             {
                 Title = "Сохранить конфигурацию",
-                Filter = "Документы Word (*.docx)|*.docx",
-                FileName = "Конфигурация.docx"
+                Filter = "Документ PDF (*.pdf)|*.pdf",
+                FileName = "Конфигурация.pdf"
             };
             if (saveDialog.ShowDialog() == true)
             {
                 string filePath = saveDialog.FileName;
-                Microsoft.Office.Interop.Word.Application word = new Microsoft.Office.Interop.Word.Application();
-                Document doc = word.Documents.Add();
                 try
                 {
-                    Microsoft.Office.Interop.Word.Paragraph title = doc.Content.Paragraphs.Add();
-                    title.Range.Text = "Конфигурация компонентов";
-                    title.Range.Font.Size = 16;
-                    title.Range.Font.Bold = 1;
-                    title.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
-                    title.Range.InsertParagraphAfter();
+                    GlobalFontSettings.FontResolver = new FontsRes();
+                    PdfDocument pdf = new PdfDocument();
+                    pdf.Info.Title = "Конфигурация компонентов";
+                    PdfPage page = pdf.AddPage();
+                    XGraphics gfx = XGraphics.FromPdfPage(page);
+                    XFont titleFont = new XFont("Arial", 16, XFontStyleEx.Bold);
+                    XFont textFont = new XFont("Arial", 12, XFontStyleEx.Regular);
+
+                    // Заголовок
+                    gfx.DrawString("Конфигурация компонентов", titleFont, XBrushes.Black, new XRect(0, 20, page.Width, page.Height), XStringFormats.TopCenter);
+
+                    // Список элементов
+                    int yPosition = 50;
                     foreach (string item in list)
                     {
-                        Microsoft.Office.Interop.Word.Paragraph paragraph = doc.Content.Paragraphs.Add();
-                        paragraph.Range.Text = item;
-                        paragraph.Range.Font.Size = 12;
-                        paragraph.Range.InsertParagraphAfter();
+                        gfx.DrawString(item, textFont, XBrushes.Black, new XRect(20, yPosition, page.Width - 40, page.Height), XStringFormats.TopCenter);
+                        yPosition += 20; // Смещение строк вниз
                     }
-                    doc.SaveAs2(filePath);
-                    doc.Close();
-                    word.Quit();
-                    MessageBox.Show("Конфигурация успешна записана в Word.", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    pdf.Save(filePath);
+
+                    MessageBox.Show("Конфигурация успешна записана в PDF.", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Ошибка при записи в Word", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Ошибка при записи в PDF", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -321,5 +331,7 @@ namespace ComputerConfig
                 }
             }
         }
+
+        
     }
 }

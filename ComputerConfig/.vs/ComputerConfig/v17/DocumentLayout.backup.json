@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\",
+  "WorkspaceRootPath": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|d:\\\u043E\u0440\u043B\u043E\u0432\\computerconfig\\computerconfig\\userpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|c:\\users\\ifruze\\desktop\\computerconfigurationwpf\\computerconfig\\computerconfig\\configurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|solutionrelative:computerconfig\\configurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|c:\\users\\ifruze\\desktop\\computerconfigurationwpf\\computerconfig\\computerconfig\\fontsres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|solutionrelative:computerconfig\\fontsres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|c:\\users\\ifruze\\desktop\\computerconfigurationwpf\\computerconfig\\computerconfig\\adminpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|solutionrelative:computerconfig\\adminpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\computerconfig\\userpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|solutionrelative:computerconfig\\userpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\computerconfig\\userpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|solutionrelative:computerconfig\\userpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\computerconfig\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\computerconfig\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|solutionrelative:computerconfig\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\computerconfig\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\computerconfig\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0617F114-CB0F-4DFE-87D5-A2EE1E60A374}|ComputerConfig\\ComputerConfig.csproj|solutionrelative:computerconfig\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,11 +46,61 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FontsRes.cs",
+              "DocumentMoniker": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\FontsRes.cs",
+              "RelativeDocumentMoniker": "ComputerConfig\\FontsRes.cs",
+              "ToolTip": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\FontsRes.cs",
+              "RelativeToolTip": "ComputerConfig\\FontsRes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T07:40:34.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ConfigurationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\ConfigurationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ComputerConfig\\ConfigurationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\ConfigurationWindow.xaml.cs",
+              "RelativeToolTip": "ComputerConfig\\ConfigurationWindow.xaml.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAADwv8YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T06:45:08.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminPanel.xaml",
+              "DocumentMoniker": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\AdminPanel.xaml",
+              "RelativeDocumentMoniker": "ComputerConfig\\AdminPanel.xaml",
+              "ToolTip": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\AdminPanel.xaml",
+              "RelativeToolTip": "ComputerConfig\\AdminPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T06:06:06.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserPanel.xaml",
+              "DocumentMoniker": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\UserPanel.xaml",
+              "RelativeDocumentMoniker": "ComputerConfig\\UserPanel.xaml",
+              "ToolTip": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\UserPanel.xaml",
+              "RelativeToolTip": "ComputerConfig\\UserPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T06:06:01.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UserPanel.xaml.cs",
-              "DocumentMoniker": "D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\ComputerConfig\\UserPanel.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\UserPanel.xaml.cs",
               "RelativeDocumentMoniker": "ComputerConfig\\UserPanel.xaml.cs",
-              "ToolTip": "D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\ComputerConfig\\UserPanel.xaml.cs",
+              "ToolTip": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\UserPanel.xaml.cs",
               "RelativeToolTip": "ComputerConfig\\UserPanel.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -43,27 +109,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Categories.cs",
-              "DocumentMoniker": "D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\ComputerConfig\\Categories.cs",
+              "DocumentMoniker": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\Categories.cs",
               "RelativeDocumentMoniker": "ComputerConfig\\Categories.cs",
-              "ToolTip": "D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\ComputerConfig\\Categories.cs",
+              "ToolTip": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\Categories.cs",
               "RelativeToolTip": "ComputerConfig\\Categories.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:56:09.478Z"
+              "WhenOpened": "2025-05-17T16:56:09.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\ComputerConfig\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\App.xaml.cs",
               "RelativeDocumentMoniker": "ComputerConfig\\App.xaml.cs",
-              "ToolTip": "D:\\\u041E\u0440\u043B\u043E\u0432\\ComputerConfig\\ComputerConfig\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\iFruze\\Desktop\\ComputerConfigurationWPF\\ComputerConfig\\ComputerConfig\\App.xaml.cs",
               "RelativeToolTip": "ComputerConfig\\App.xaml.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAYwFEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T11:51:56.02Z"
+              "WhenOpened": "2025-05-17T11:51:56.02Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Орлов\ComputerConfig\ComputerConfig\obj\Debug\
+C:\Users\iFruze\Desktop\ComputerConfigurationWPF\ComputerConfig\ComputerConfig\obj\Debug\
 ComputerConfig
 none
 false
 DEBUG;TRACE
-D:\Орлов\ComputerConfig\ComputerConfig\App.xaml
+C:\Users\iFruze\Desktop\ComputerConfigurationWPF\ComputerConfig\ComputerConfig\App.xaml
 7231091015
 2-1957146511
-21174842715
-21-487694725
+22231104237
+16628781199
 AdminPanel.xaml;ChangeComponent.xaml;ConfigurationWindow.xaml;EnterWindow.xaml;FullInformationAboutComponent.xaml;MainWindow.xaml;UserPanel.xaml;
 
-True
+False
 
